@@ -4,19 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xonxoni F&F</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./styles/style.css">
     <!-- tailwind and daisyUI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!-- font awesome -->
 
     <!-- styles -->
     <!-- css .font-poppins{font-family: 'Poppins', sans-serif;} -->
     <style>
-      .font-poppins{font-family: 'Poppins', sans-serif;}
+      .font-poppins {font-family: 'Poppins', sans-serif;}
     </style>
     <!-- js -->
 
@@ -24,7 +26,38 @@
 </head>
 <body class="bg-gradient-to-r from-[#ded6d8] to-[#e5e9f0] font-poppins">
     <header class="w-[350px] mx-auto sm:w-[640px] md:w-[768px] lg:w-[1170px] ">
-        <nav class="w-[350px] mx-auto sm:w-[640px] md:w-[768px] lg:w-[1170px] ">
+      <nav>
+        <div class="navbar mb-1 bg-gradient-to-r from-[#ced4da] from-10% via-[#dee2e6] via-30% to-[#ced4da] to-90% hover:from-pink-500 hover:to-yellow-500">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div id="menu-btn" tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <div id="menu-index" class=" ">
+                  <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a>Home</a></li>
+                    <li><a href="">Meetups</a></li>
+                    <li><a href="./index/members.html">Members</a></li>
+                    <li><a>Search</a></li>
+                  </ul>
+                </div>
+              </div>
+              <a class="btn btn-ghost text-xl">XONXONI F&F</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Home</a></li>
+                <li><a href="">Meetups</a></li>
+                <li><a href="./index/members.html">Members</a></li>
+                <li><a>Search</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <a class="btn btn-primary">Sign In</a>
+            </div>
+          </div>
+    </nav>
+        <!-- <nav class="w-[350px] mx-auto sm:w-[640px] md:w-[768px] lg:w-[1170px] ">
             <div class="navbar drop-shadow-lg mb-1 bg-gradient-to-r from-[#ced4da] from-10% via-[#dee2e6] via-30% to-[#ced4da] to-90% hover:from-pink-500 hover:to-yellow-500 ">
                 <div class="navbar-start">
                   <div class="dropdown">
@@ -33,51 +66,27 @@
                     </div>
                     <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                       <li><a>Home</a></li>
-                      <li>
-                        <a>MEETUPS</a>
-                        <ul class="p-2">
-                          <li><a>Submenu 1</a></li>
-                          <li><a>Submenu 2</a></li>
-                        </ul>
-                      </li>
-                      <li>MEMBERS
-                        <ul class="p-2">
-                          <li><a>Submenu 1</a></li>
-                          <li><a>Submenu 2</a></li>
-                        </ul>
-                      </li>
+                      <li><a href="">About</a></li>
+                      <li><a>Destination</a></li>
+                      <li><a>Search</a></li>
                     </ul>
                   </div>
                   <a class="btn btn-ghost text-xl">XONXONI F&F</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                   <ul class="menu menu-horizontal px-1">
-                    <li><a>HOME</a></li>
-                    <li>
-                      <details>
-                        <summary>MEETUPS</summary>
-                        <ul class="p-2">
-                          <li><a>Submenu 1</a></li>
-                          <li><a>Submenu 2</a></li>
-                        </ul>
-                      </details>
-                    </li>
-                    <li>
-                      <details>
-                        <summary>MEMBERS</summary>
-                        <ul class="p-2">
-                          <li><a>Submenu 1</a></li>
-                          <li><a>Submenu 2</a></li>
-                        </ul>
-                      </details>
-                    </li>
+                    <li><a>Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a>Destination</a></li>
+                    <li><a>Search</a></li>
                   </ul>
                 </div>
+
                 <div class="navbar-end">
                   <a class="btn btn-primary">Sign In</a>
                 </div>
               </div>
-        </nav>
+        </nav> -->
         <!-- banner -->
         <section class="mx-auto">
             <div class="hero min-h-screen drop-shadow-2xl" style="background-image: url(./images/cover.jpg); clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);">
@@ -128,5 +137,14 @@
         <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg></a>
       </nav>
     </footer>
+
+    <!-- script scr -->
+    <script src="./js/index.js"></script>
+    <script src="./js/app.js"></script>
+    <!-- scripts -->
+    <script>
+
+    </script>
+
 </body>
 </html>
